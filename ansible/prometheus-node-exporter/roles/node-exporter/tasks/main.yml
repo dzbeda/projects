@@ -1,0 +1,5 @@
+---
+# tasks file for node-exporter
+- include: create-user.yml
+- include: file-copy.yml
+- include: create-service.yml
