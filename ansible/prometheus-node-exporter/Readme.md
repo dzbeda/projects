@@ -16,11 +16,10 @@ In case node-exporter upgrade is required , Please folow the below steps
   
   In your main playbook add the follwoing tasks 
   
->
-  - hosts: all
-  become: true
-  any_errors_fatal: true
-  gather_facts: False
-  roles:
-    - node-exporter
+> - hosts: all
+    become: true
+    any_errors_fatal: true
+    gather_facts: False
+    roles:
+      - node-exporter
 
