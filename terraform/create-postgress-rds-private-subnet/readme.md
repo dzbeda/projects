@@ -1,6 +1,6 @@
 # This task creates AWS RDS using TF - the RDS is located on private subnet.
 
-VAlues can be updated under **terraform.tfvars file
+Values can be updated under **terraform.tfvars file
 
 ## The TF run will create the below aws objects
 1. Create VPN
