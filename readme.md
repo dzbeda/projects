@@ -1,4 +1,4 @@
-# What can i find here?
+# What can you find in this repository?
 This repo includes small tasks and script that i have craeted. You can find Terraform tasks like createing RDS with full enviroment and Ansible playbooks.
 
 ## Terraform 
@@ -6,3 +6,5 @@ This repo includes small tasks and script that i have craeted. You can find Terr
 
 ## Ansible 
 1. Prometheus node exporter
+
+** David Zbeda **
