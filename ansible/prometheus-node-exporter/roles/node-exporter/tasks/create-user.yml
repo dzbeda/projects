@@ -1,0 +1,10 @@
+###  Create node exporter user
+
+- name: create node_exporter user
+  user:
+    name: node_exporter
+    shell: /bin/false
+    append: yes
+
+
+

@@ -1,0 +1,15 @@
+
+- name: Copy file node exporter file
+  copy:
+    src: node-exporter/node_exporter
+    dest: /usr/local/bin/node_exporter
+    mode: 0755
+
+- name: Copy file node exporter service file
+  copy:
+    src: node_exporter.service
+    dest: /etc/systemd/system/
+
+
+
+

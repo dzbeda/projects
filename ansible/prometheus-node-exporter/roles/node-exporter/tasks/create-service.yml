@@ -1,0 +1,9 @@
+
+- name: start node exporter service
+  systemd:
+    name: node_exporter
+    state: restarted
+    enabled: yes
+
+
+
