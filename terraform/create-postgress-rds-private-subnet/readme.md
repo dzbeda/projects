@@ -25,4 +25,4 @@ VAlues can be updated under **terraform.tfvars file
    2. sudo apt-get install postgresql-client
     
 3. In order to connect to the postgres db run the following :     
-psql -h (hostname or ip address) -p <port number of remote machine> -d <database name which you want to connect> -U <username of the database server>
+psql -h (hostname or ip address) -p (port number of remote machine) -d (database name which you want to connect) -U (username of the database server)
