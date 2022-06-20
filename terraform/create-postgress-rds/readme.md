@@ -7,5 +7,6 @@
 5. Create route table
 6. Create Security Group
 7. Create RDS based on postgres 
-  1. The RDS is based on postgres version 12 ; this can be changed by modify the  "engine_version" parameter 
-  2. Defualt password is "thispassword" ; this can be changed by modify the  "password" parameter
+  A. The RDS is based on postgres version 12 ; this can be changed by modify the  "engine_version" parameter 
+  B. Defualt password is "thispassword" ; this can be changed by modify the  "password" parameter
+  C. The RDS is public and accessable from the outside
