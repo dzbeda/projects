@@ -1,3 +1,4 @@
+ #!/usr/bin/bash 
 #Define the folder from which you wish to delete the files
 folder_path="/sensor/_delta_log"
 #Define the age of the files (in days) you wish to delte. for eaxmple 30 , means to delete files that are than 30 days 
