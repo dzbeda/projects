@@ -1,7 +1,7 @@
 #Define the folder from which you wish to delete the files
 folder_path="/sensor/_delta_log"
 #Define the age of the files (in days) you wish to delte. for eaxmple 30 , means to delete files that are than 30 days 
-delete_folder_older_then=132
+delete_files_older_then=132
 today=$(date +%F)  # Get current date 
 #echo $today
 today_time_converted=$(date -d ${today} '+%s')  #Convert date to epoch time
@@ -15,7 +15,7 @@ file_time_converted=$(date -d ${file_date} '+%s')  #Convert date to epoch time
 #echo $file_time_converted
 diffrencet=$(( ( today_time_converted - file_time_converted )/(60*60*24) )) #Verify the time diffrence from current date
 #echo $diffrencet
-if [ ${diffrencet} -gt ${delete_folder_older_then} ]; then	
+if [ ${diffrencet} -gt ${delete_files_older_then} ]; then	
 	echo "delete file" ${filePath}
 	hdfs dfs -rm -r -skipTrash $filePath
 fi
