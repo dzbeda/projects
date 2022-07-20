@@ -83,7 +83,7 @@ fi
 
 if [ -z "$4" ];
 then
-	echo "Since no keytab file name was define - default value is" $user".keyab"
+	echo "Since no keytab file name was define - default tempalte file is $user.keyab
 	keytab_file_name=$user.keytab
 else
   keytab_file_name=$4
