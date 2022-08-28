@@ -32,7 +32,7 @@ get_current_date() {
 
 delete_files() {
   set_keytab_refresh_counter=$keytab_refresh_counter
-  hdfs dfs -ls ${folder_path} |  grep "^-" | while read line ; do  #get file list
+  hdfs dfs -ls -R ${folder_path} |  grep "^-" | while read line ; do  #get file list
   set_keytab_refresh_counter=$(( set_keytab_refresh_counter - 1))
   echo $set_keytab_refresh_counter
   if [ $set_keytab_refresh_counter -eq "0" ];
