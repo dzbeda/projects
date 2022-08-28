@@ -7,7 +7,7 @@ today=$(date +%F)  # Get current date
 #echo $today
 today_time_converted=$(date -d ${today} '+%s')  #Convert date to epoch time
 #echo $today_time_converted
-hdfs dfs -ls ${folder_path} |  grep "^-" | while read line ; do  # Get list of files from folder 
+hdfs dfs -ls -R ${folder_path} |  grep "^-" | while read line ; do  # Get list of files from folder 
 filePath=$(echo ${line} | awk '{print $8}') #Extract file path 
 #echo $filePath
 file_date=$(echo ${line} | awk '{print $6}')  #get file date
