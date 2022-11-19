@@ -27,8 +27,9 @@ In input-file.yml file should hodl all indexes list. Each index should be define
 2. min_index_age_in_days parameters 
     1. This defines how long to save an index before deleting it.
     2. Please note that the value describes days
+    3. 
 3.status parameters 
-    1. disable - if a policy name exists the policy will be deleted. this way you can have default list of index with where status is set to "disable" and for each project you can enable only the relevant indexes
+    1. disable - if a policy name exists the policy will be deleted. this way you can have default list of index with where status is set to "disable" and for each             project you can enable only the relevant indexes
     2. enable - Policy will be created or updated 
 
  ** Important note **
