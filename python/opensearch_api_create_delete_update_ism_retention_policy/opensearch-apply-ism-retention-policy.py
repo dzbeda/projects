@@ -12,7 +12,6 @@ DB_HOSTNAME = 'es1'
 DB_PORT = '9200'
 BASE_URL = '_opendistro/_ism/policies'
 URL_HEADERS = {'content-type': 'application/json'}
-SITE_INFO_FILE_PATH = '/opt/tps/deployment/site-info.yml'
 active_ism_policies = []
 active_ism_policies_names = []
 
