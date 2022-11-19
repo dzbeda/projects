@@ -1,0 +1,9 @@
+# This section defines the ISM retention policy on the opensearch db
+# disable status will delete the policy if exists
+# enable status will create new policy if not existing or will upgrade a policy if existing
+# note that new policy will be applied only for future index
+# note that index pattern will be based on the following template  index_name-*
+opensearch_main_ism_retention_policy:
+   - { index_name: testindex1 , min_index_age_in_days: 1000 , status: enable }
+   - { index_name: testindex2 , min_index_age_in_days: 30 , status: enable }
+   - { index_name: testindex3 , min_index_age_in_days: 30 , status: enable }
