@@ -34,6 +34,6 @@ In input-file.yml file should hodl all indexes list. Each index should be define
 
  ** Important note **
 
-New policy can manage only indexs that were created after the policy was created. Meaning that indexes that were created before the policy will not be managed by the ISM policy.  Therfore , if you need to update a policy do not delete it and create a new one - just update the policy (this is supported by the ISM installation)
+New policy can manage only indexs that were created after the policy was created. Meaning that indexes that were created before the policy will not be managed by the ISM policy.  Therfore , if you need to update a policy do not delete it and create a new one - just update the policy (this is supported by the ISM script)
 
 
