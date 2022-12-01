@@ -18,7 +18,7 @@ ISM can be used for moving indices between HOT storage (IOPS intensive) to cold 
     
 # How to use this project # 
 
-In input-file.yml file should hodl all indexes list. Each index should be defined with 3 parameter 
+In input-file.yml file should hold all indexes list. Each index should be defined with 3 parameter 
 
 
 1. index_name parameters 
@@ -31,6 +31,8 @@ In input-file.yml file should hodl all indexes list. Each index should be define
 3. status parameters 
     1. disable - if a policy name exists the policy will be deleted. this way you can have default list of index with where status is set to "disable" and for each             project you can enable only the relevant indexes
     2. enable - Policy will be created or updated 
+
+4. The ISM policy tempalte is described under *update_policy_template* function. Parameters such as description,default_state, schema_version or action can be updated.
 
  ** Important note **
 
