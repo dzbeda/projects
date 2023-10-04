@@ -4,6 +4,6 @@
 # note that new policy will be applied only for future index
 # note that index pattern will be based on the following template  index_name-*
 opensearch_main_ism_retention_policy:
-   - { index_name: testindex1 , min_index_age_in_days: 1000 , status: enable }
-   - { index_name: testindex2 , min_index_age_in_days: 30 , status: enable }
-   - { index_name: testindex3 , min_index_age_in_days: 30 , status: enable }
+   - { index_name: audit , min_index_age_in_days: 2 , status: enable }
+   - { index_name: ioc-search , min_index_age_in_days: 30 , status: disable }
+   - { index_name: user-notifications , min_index_age_in_days: 180 , status: enable }
