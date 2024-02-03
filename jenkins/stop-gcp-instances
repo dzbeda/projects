@@ -1,0 +1,26 @@
+// This pipelien will shutdown all instances under GCP project. The Instances can belong to any zone 
+// Generate a service account and upload to jenkins as secret file
+// install the gcloud plugin
+pipeline {
+  agent { label 'Agent1' }
+   environment {
+    CLOUDSDK_CORE_PROJECT='You project name'
+    ZONE='us-central1-c'
+  }
+  stages {
+    stage('test') {
+      steps {
+        withCredentials([file(credentialsId: 'gcloud-jenkins-creds', variable: 'GCLOUD_CREDS')]) {
+          sh '''
+            gcloud auth activate-service-account --key-file="$GCLOUD_CREDS"
+            INSTANCES=$(gcloud compute instances list --format="value(name)")
+            for INSTANCE in $INSTANCES; do
+                 echo "instance name to be powered off: $INSTANCE"
+                 gcloud compute instances stop $(gcloud compute instances list --filter="name:$INSTANCE" --uri)
+            done
+          '''
+        }
+      }
+    }
+  }
+}
