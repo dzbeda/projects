@@ -16,6 +16,7 @@ This repo includes small tasks and scripts that i have created. You can find Ter
 ## Connect on LinkedIn and on Medium
 Feel free to connect with me on LinkedIn or Medium for more insights on Big Data, DevOps, and cloud-native solutions:
 www.linkedin.com/in/davidzbeda
+
 https://medium.com/@dudu.zbeda_13698
 
 ***David Zbeda***
